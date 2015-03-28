@@ -1,0 +1,23 @@
+<apex:page controller="DesignCustomizeController" showheader="true" sidebar="false" id="page">
+    
+    <apex:include pageName="DesignCustomizeCss" />
+
+    <body id="vf-body">
+        <div id="vf-page">
+            <apex:form id="form">
+                <div>
+                    <apex:commandLink value=" Search " title="Search" action="{!doSearch}" reRender="form" id="searchBtn" styleClass="linkBtn"/>
+                </div>
+                <div>
+                    <ul>
+                        <apex:repeat value="{!accounts}" var="item">
+                            <li>
+                                <apex:outputText value="{!item.Name}" />
+                            </li>
+                        </apex:repeat>
+                    </ul>
+                </div>
+            </apex:form>
+        </div>
+    </body>
+</apex:page>

@@ -13,7 +13,7 @@ private class DesignCustomizeControllerTest {
 
             Test.stopTest();
             
-             System.assertEquals(cls.accounts.isEmpty(), true);
+            System.assertEquals(cls.accounts.isEmpty(), true);
         }
     }
     
@@ -31,7 +31,7 @@ private class DesignCustomizeControllerTest {
 
             Test.stopTest();
             
-             System.assertEquals(cls.accounts.isEmpty(), false);
+            System.assertEquals(cls.accounts.isEmpty(), false);
         }
     }
 }
